@@ -28,7 +28,7 @@ export default function Market({ navigation }) {
   };
 
   const onEndReached = async () => {
-    await dispatch(getMarketList("usd", "market_cap_desc", 150, marketPage));
+    await dispatch(getMarketList("usd", "market_cap_desc", 15, marketPage));
     setMarketPage(marketPage + 1);
   };
   useEffect(() => {
